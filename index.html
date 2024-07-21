@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya Chaudhary</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; /* Make the complete background white */
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .container {
+            width: 80%; /* Give more space to left and right sides */
+            display: flex;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .left-column {
+            flex: 0 0 350px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .left-column-content {
+            text-align: center;
+        }
+        .left-column h1 {
+            color: #0073b1;
+            margin-bottom: 10px;
+        }
+        .left-column img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+            border: 5px solid navy;
+        }
+        .left-column p {
+            font-size: 1em;
+            color: #666;
+        }
+        .left-column a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+        .left-column a:hover {
+            text-decoration: underline;
+        }
+        .left-column-footer {
+            font-size: 0.7em;
+            color: #666;
+            margin-bottom: 25px; /* Reduce space between GitHub link and footer */
+        }
+        .right-column {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            height: 95vh;
+        }
+        .right-column h2 {
+            color: #333;
+            margin-top: 5px; /* Adjust this to align better with the name */
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+        .projects, .education, .work-experience, .skills, .achievements {
+            margin-top: 20px;
+        }
+        .projects h3, .education h3, .work-experience h3, .skills h3, .achievements h3 {
+            color: #333;
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 5px;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .projects ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .projects ul li, .education ul li {
+            margin: 5px 0;
+            display: list-item;
+            list-style-position: inside;
+            align-items: center;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .projects ul li a, .education ul li a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+        .projects ul li a:hover, .education ul li a:hover {
+            text-decoration: underline;
+        }
+        .education .degree {
+            margin-bottom: 20px;
+        }
+        .education .degree h4 {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .education .degree p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 1em;
+        }
+        .education .degree ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        .education .degree ul li {
+            margin-bottom: 5px;
+            display: list-item;
+            list-style-position: inside;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .work-experience .job {
+            margin-bottom: 20px;
+        }
+        .work-experience .job h4 {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .work-experience .job p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 1em;
+        }
+        .work-experience .job ul {
+            margin-left: 20px;
+            list-style-type: disc;
+            padding-left: 0;
+        }
+        .work-experience .job ul li {
+            margin-bottom: 5px;
+            display: list-item;
+            list-style-position: inside;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .projects .project {
+            margin-bottom: 20px;
+        }
+        .projects .project h4 {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .projects .project p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 1em;
+        }
+        .projects .project ul {
+            margin-left: 20px;
+            list-style-type: disc;
+            padding-left: 0;
+        }
+        .projects .project ul li {
+            margin-bottom: 5px;
+            display: list-item;
+            list-style-position: inside;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .skills .skill {
+            margin-bottom: 20px;
+        }
+        .skills .skill h4 {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .skills .skill ul {
+            margin-left: 20px;
+            list-style-type: disc;
+            padding-left: 0;
+        }
+        .skills .skill ul li {
+            margin-bottom: 5px;
+            display: list-item;
+            list-style-position: inside;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .achievements .achievement {
+            margin-bottom: 20px;
+        }
+        .achievements .achievement h4 {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .achievements .achievement ul {
+            margin-left: 20px;
+            list-style-type: disc;
+            padding-left: 0;
+        }
+        .achievements .achievement ul li {
+            margin-bottom: 5px;
+            display: list-item;
+            list-style-position: inside;
+            color: #333;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="left-column-content">
+                <h1>Tanya Chaudhary</h1>
+                <img src="profilephoto.png" alt="Tanya Chaudhary">
+                <p>Turning data into insights as a Masters student at The University of Manchester. Passionate about analytics, engineering, and shaping the future of Data Science/Analytics.</p>
+                <h5><a href="https://github.com/Tanya150199/tanyachaudhary.github.io" target="_blank">View the Project on GitHub</a></h5>
+            </div>
+            <div class="left-column-footer">
+                <p>This project is maintained by <a href="https://github.com/Tanya150199">Tanya150199</a></p>
+                <p>Hosted on GitHub Pages</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>Data Science Enthusiast</h2>
+            <p class="contact-info">
+                📧 <a href="mailto:tanyachaudhary585@gmail.com">tanyachaudhary585@gmail.com</a> | <a href="https://www.linkedin.com/in/tanya-chaudhary-a34bb4152/">LinkedIn</a> | <a href="https://github.com/Tanya150199">GitHub</a> | +44(0) 7407056354
+            </p>
+            <section class="projects">
+                <h3>Highlighted Projects</h3>
+                <ul>
+                    <li>Literature Mining Tool for POLESTAR, UK | <a href="https://github.com/Tanya150199/Literature-Mining-Tool-POLESTAR/blob/main/README.md"> Literature Mining Tool </a> | <a href="https://github.com/Tanya150199/Literature-Mining-Tool-POLESTAR"> Github </a></li>
+                    <li>Student Leader Experience Dashboard (UoM)| <a href="https://github.com/Tanya150199/StudentLeadershipExperienceDashboard-PowerBI/blob/main/README.md"> Dashboard </a></li>
+                    <li>Relation Extraction Models using Stacking Classifier and Deep Neural Networks |  <a href="https://github.com/Tanya150199/Relation-Extraction-Models-NLP"> Github </a></li>
+                </ul>
+            </section>
+            <section class="education">
+                <h3>🎓 Education</h3>
+                <div class="degree">
+                    <h4>MSc Data Science (Business and Management)</h4>
+                    <p>The University of Manchester (09/2023 - 09/2024, Expected - Distinction)</p>
+                    <ul>
+                        <li><b>Courses:</b> Statistics & Machine Learning (Supervised & Unsupervised Learning), Text Mining, Understanding Databases (SQL & NoSQL), Python for Business Analytics, Financial Data Analytics and AI in Finance.</li>
+                        <li><b>Dissertation:</b> Impact of COVID-19 on mental health using Sentiment Analysis/ NLP on Reddit posts. </li>
+                        <li><b>Industrial Project:</b> Developed a Literature Mining Tool using NLP and Deep Learning for the research team at POLESTAR, UK.</li>
+                    </ul>
+                </div>
+                <div class="degree">
+                    <h4>B.Tech in Computer Science and Engineering</h4>
+                    <p>Guru Gobind Singh Indraprastha University (04/2017 - 04/2021, CGPA - 9.45/10.0)</p>
+                    <ul>
+                        <li><b>Relevant Courses:</b> Computer Vision, Database Management, Artificial Intelligence and Machine Learning, Java Programming, Probability Theory and Statistics, Advanced Mathematics, Computer Organization and Architecture.</li>
+                        <li><b>Dissertation:</b> Developed a Visual Speech Recognition model using machine learning techniques. It achieved a performance of 19.1%, 1.0% and 0.9% WER for automatic, visual, and audio-visual speech recognition (ASR, VSR, and AV-ASR) on LRS3.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="work-experience">
+                <h3>📝 Work Experience</h3>
+                <div class="job">
+                    <h4>Student Data Analyst @ Student’s Union (University of Manchester)</h4>
+                    <p>Manchester, UK (02/2024 - Present)</p>
+                    <ul>
+                        <li>Created and refined dashboards with PowerBI and DAX to analyze and visualize large datasets from campaigns and market research surveys, each with over 2000 respondents, enhancing student experiences.</li>       
+                        <li>Worked closely with diverse stakeholders to extract, manage, transform, and clean data from multiple sources using M/Power Query, aiding in the generation of valuable commercial and organizational insights.</li>   
+                        <li><a href="https://github.com/Tanya150199/AccessAndParticipationPlan-Using-PowerBI/blob/main/Access_and_Participation_Plan_Dashboard.md">Access and Participation Plan Dashboard</a> | <a href="https://github.com/Tanya150199/StudentSupportHubsDashboard-using-PowerBI/blob/main/README.md">Student Support Hubs Dashbaord</a> | <a href="https://github.com/Tanya150199/StudentLeadershipExperienceDashboard-PowerBI/blob/main/README.md">Student Leader Experience Dashboard</a></li>              
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Business Technology Analyst @ ZS Associates</h4>
+                    <p>Gurugram, India (10/2021 - 07/2023)</p>
+                    <ul>
+                        <li>Built backend tables using Custom SQL and Snowflake schemas, and designed dashboards with Tableau, enhancing decision-making efficiency and providing insights that led to a 25% increase in operational effectiveness.</li>
+                        <li>Worked with Bayer UK, a leader in healthcare and agriculture to calculate KPIs, design data models, and resolve UAT feedback, leading to a 30% improvement in data accuracy and making HCP interactions and details analysis more efficient, significantly boosting client trust in the delivered solutions, which resulted in a 15% increase in client retention worth $250,000</li>
+                        <li>Led projects involving requirement gathering, project planning, data ingestion, ETL, and reporting, resulting in a 20% reduction in project completion time.</li>
+                        <li>Created reporting domains using Python/ AWS services (Dynamo DB, S3, Glue, Step Functions) and deployed via CI/CD pipelines, achieving a significant reduction in data processing time and ensuring high data reliability and availability for our clients.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Programmer Analyst Trainee @ Cognizant</h4>
+                    <p>Gurugram, India (06/2021 - 10/2021)</p>
+                    <ul>
+                        <li>Involved in data modeling, database design, and debugging at Cognizant, resulting in a reduction in report errors and improved data processing efficiency, enhancing report quality and client satisfaction.</li>
+                        <li>Built multiple weekly status reports on JIRA to present to clients, improving transparency and communication, leading to increased client trust and engagement.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="projects">
+                <h3>💻 Projects</h3>
+                <div class="project">
+                    <b>Literature Mining Tool for POLESTAR, UK |</b> | <a href="https://github.com/Tanya150199/Literature-Mining-Tool-POLESTAR/blob/main/literature_mining.py">Github</a>
+                    <ul>
+                        <li>Developed an NLP-driven tool for POLESTAR to automate the review and synthesis of scientific literature, integrating with PUBMED and DOAJ APIs to provide POLESTAR's research team with research details such as literature papers and domain topics based on their queries.</li>
+                        <li>Implemented a question-answering feature in the tool, enabling users to ask related questions and receive context-based responses, thereby enhancing POLESTAR's research process towards achieving their zero-carbon car goal by 2030.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <b>Relation Extraction in NLP using SemEval-2010 Data |</b> <a href="https://github.com/Tanya150199/Relation-Extraction-Models-NLP/blob/main/RelationExtractionUsingNLP.pdf">Research Paper</a> | <a href="https://github.com/Tanya150199/Relation-Extraction-Models-NLP/blob/main/Neural_Networks_Model.ipynb">Github</a>
+                    <ul>
+                        <li>Explored relation extraction in NLP using SemEval-2010 data, implementing the "SVM+RF-SVM" model which combines Support Vector Classification (SVC) and Random Forest in a Stacking Classifier, achieving promising accuracy (75%) and F1 scores.</li>
+                        <li>Developed the "BiLSTM-CNN-Multi-Head Attention" model, leveraging deep learning techniques including CNNs, Bi-LSTM, and attention mechanisms, resulting in enhanced performance in relation extraction tasks.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <b>Visual Speech Recognition using Machine Learning</b>
+                    <ul>
+                        <li>Developed a Visual Speech Recognition (VSR) model using machine learning techniques, achieving a 1.0% Word Error Rate (WER) for visual speech recognition on the LRS3 dataset.</li>
+                        <li>Enhanced speech recognition capabilities with the model achieving 19.1% WER for automatic speech recognition (ASR) and 0.9% WER for audio-visual speech recognition (AV-ASR) on the LRS3 dataset.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="skills">
+                <h3>🚀 Skills</h3>
+                <div class="skill">
+                    <h4>Technical Skills:</h4>
+                    <ul>
+                        <li>ML / AI / DS: Python, SQL, Snowflake, Numpy, Pandas, Scikit-learn, Data Analysis, Data Visualization (PowerBI & Tableau), AWS, Statistical Analysis, Data Pipelines, Data Engineering, Machine Learning, NLP, Deep Learning.</li>
+                        <li>Others: Microsoft Office Suite (Excel, Word, Powerpoint).</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h4>Soft Skills:</h4>
+                    <ul>
+                        <li>Planning, Organisational, Communication, Energy, Curiosity, Adaptability, Team Player, Time Management, Flexibility, Problem-solving, Leadership, Collaboration, Calm under Pressure, Methodical Approach, Attention to Detail.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="achievements">
+                <h3>🏆 Certifications & Achievements</h3>
+                <div class="achievement">
+                    <h4>Certifications:</h4>
+                    <ul>
+                        <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential">AWS Certified Cloud Practitioner </a> (Credential ID: 3BN8NEGBYNQ1QBGZ)</li>
+                        <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential">AWS Certified Solutions Architect - Associate </a> (Credetial ID: ae9807ffb69042f7a35fee0fb9681198)</li>
+                        <li><a href="https://www.credly.com/badges/d40ace4c-cdc9-49d3-9f0f-551f1aff5eaf">Tableau Certified Desktop Specialist</a></li>
+                    </ul>
+                </div>
+                <div class="achievement">
+                    <h4>Academic Achievements</h4>
+                    <ul>
+                        <li>Recipient Global Futures Scholarship at The University of Manchester.</li>
+                        <li>Qualified the Graduate Aptitude Test in Engineering (GATE) exam held in India with a percentile rank within the top 1% nationwide. </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
