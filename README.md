@@ -1,14 +1,14 @@
 # Data Science Enthusiast
 
-📧 tanyachaudhary585@gmail.com | [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com) | +44(0) 7407056354
+📧 tanyachaudhary585@gmail.com | [LinkedIn](https://www.linkedin.com/in/tanya-chaudhary-a34bb4152/) | [GitHub](https://github.com/Tanya150199) | +44(0) 7407056354
 
 ---
 
 ## Highlighted Projects
 
-- **Literature Mining Tool for POLESTAR, UK** | [Literature Mining Tool](https://github.com) | [GitHub](https://github.com)
-- **Student Leader Experience Dashboard (UoM)** | [Dashboard](https://github.com)
-- **Relation Extraction Models using Stacking Classifier and Deep Neural Networks** | [GitHub](https://github.com)
+- **Literature Mining Tool for POLESTAR, UK** | [Literature Mining Tool](https://github.com/Tanya150199/Literature-Mining-Tool-POLESTAR/blob/main/README.md) | [GitHub](https://github.com/Tanya150199/Literature-Mining-Tool-POLESTAR)
+- **Student Leader Experience Dashboard (UoM)** | [Dashboard](https://github.com/Tanya150199/StudentLeadershipExperienceDashboard-PowerBI/blob/main/README.md)
+- **Relation Extraction Models using Stacking Classifier and Deep Neural Networks** | [GitHub](https://github.com/Tanya150199/Relation-Extraction-Models-NLP)
 
 ---
 
@@ -36,9 +36,9 @@
 
 - Created and refined dashboards with PowerBI and DAX to analyze and visualize large datasets from campaigns and market research surveys, each with over 2000 respondents, enhancing student experiences.
 - Worked closely with diverse stakeholders to extract, manage, transform, and clean data from multiple sources using M/Power Query, aiding in the generation of valuable commercial and organizational insights.
-  - [Access and Participation Plan Dashboard](https://github.com)
-  - [Student Support Hubs Dashboard](https://github.com)
-  - [Student Leader Experience Dashboard](https://github.com)
+  - [Access and Participation Plan Dashboard](https://github.com/Tanya150199/AccessAndParticipationPlan-Using-PowerBI/blob/main/Access_and_Participation_Plan_Dashboard.md)
+  - [Student Support Hubs Dashboard](https://github.com/Tanya150199/StudentSupportHubsDashboard-using-PowerBI/blob/main/README.md)
+  - [Student Leader Experience Dashboard](https://github.com/Tanya150199/StudentLeadershipExperienceDashboard-PowerBI/blob/main/README.md)
 
 ### Business Technology Analyst @ ZS Associates
 **Gurugram, India** (10/2021 - 07/2023)
@@ -58,11 +58,11 @@
 
 ## Projects
 
-### Literature Mining Tool for POLESTAR, UK | [GitHub](https://github.com)
+### Literature Mining Tool for POLESTAR, UK | [GitHub](https://github.com/Tanya150199/Literature-Mining-Tool-POLESTAR/blob/main/literature_mining.py)
 - Developed an NLP-driven tool for POLESTAR to automate the review and synthesis of scientific literature, integrating with PUBMED and DOAJ APIs to provide POLESTAR's research team with research details such as literature papers and domain topics based on their queries.
 - Implemented a question-answering feature in the tool, enabling users to ask related questions and receive context-based responses, thereby enhancing POLESTAR's research process towards achieving their zero-carbon car goal by 2030.
 
-### Relation Extraction in NLP using SemEval-2010 Data | [Research Paper](https://github.com) | [GitHub](https://github.com)
+### Relation Extraction in NLP using SemEval-2010 Data | [Research Paper](https://github.com/Tanya150199/Relation-Extraction-Models-NLP/blob/main/RelationExtractionUsingNLP.pdf) | [GitHub](https://github.com/Tanya150199/Relation-Extraction-Models-NLP/blob/main/Neural_Networks_Model.ipynb)
 - Explored relation extraction in NLP using SemEval-2010 data, implementing the "SVM+RF-SVM" model which combines Support Vector Classification (SVC) and Random Forest in a Stacking Classifier, achieving promising accuracy (75%) and F1 scores.
 - Developed the "BiLSTM-CNN-Multi-Head Attention" model, leveraging deep learning techniques including CNNs, Bi-LSTM, and attention mechanisms, resulting in enhanced performance in relation extraction tasks.
 
@@ -86,9 +86,9 @@
 ## Certifications & Achievements
 
 ### Certifications:
-- [AWS Certified Cloud Practitioner](https://www.youracclaim.com/badges/3BN8NEGBYNQ1QBGZ)
-- [AWS Certified Solutions Architect - Associate](https://www.youracclaim.com/badges/ae9807ffb69042f7a35fee0fb9681198)
-- [Tableau Certified Desktop Specialist](https://www.youracclaim.com/badges/cb8f1f6e-7424-4dfb-b8eb-791c2c47a3cd)
+- [AWS Certified Cloud Practitioner](https://cp.certmetrics.com/amazon/en/public/verify/credential) (Credential ID: 3BN8NEGBYNQ1QBGZ)
+- [AWS Certified Solutions Architect - Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential) (Credetial ID: ae9807ffb69042f7a35fee0fb9681198)
+- [Tableau Certified Desktop Specialist](https://www.credly.com/badges/d40ace4c-cdc9-49d3-9f0f-551f1aff5eaf)
 
 ### Academic Achievements:
 - Recipient Global Futures Scholarship at The University of Manchester.
