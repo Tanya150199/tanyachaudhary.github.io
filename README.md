@@ -1,4 +1,4 @@
-# Data Science Enthusiast
+# Data Science/Analytics Enthusiast
 
 📧 tanyachaudhary585@gmail.com | [LinkedIn](https://www.linkedin.com/in/tanya-chaudhary-a34bb4152/) | [GitHub](https://github.com/Tanya150199) | +44(0) 7407056354
 
