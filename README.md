@@ -79,7 +79,7 @@
 - **Others**: Microsoft Office Suite (Excel, Word, PowerPoint).
 
 ### Soft Skills:
-- Planning, Organizational, Communication, Energy, Curiosity, Adaptability, Team Player, Time Management, Flexibility, Problem-solving, Leadership, Collaboration, Calm under Pressure, Methodical Approach, Attention to Detail.
+- Planning, Organizational, Communication, Energy, Curiosity, Adaptability, Team Player, Time Management, Flexibility, Problem-solving, Leadership, Collaboration, Calm under Pressure, Methodical Approach, Attention to Detail
 
 ---
 
