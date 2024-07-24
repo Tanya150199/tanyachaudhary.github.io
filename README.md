@@ -87,7 +87,7 @@
 
 ### Certifications:
 - [AWS Certified Cloud Practitioner](https://cp.certmetrics.com/amazon/en/public/verify/credential) (Credential ID: 3BN8NEGBYNQ1QBGZ)
-- [AWS Certified Solutions Architect - Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential) (Credetial ID: ae9807ffb69042f7a35fee0fb9681198)
+- [AWS Certified Solutions Architect - Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential) (Credential ID: ae9807ffb69042f7a35fee0fb9681198)
 - [Tableau Certified Desktop Specialist](https://www.credly.com/badges/d40ace4c-cdc9-49d3-9f0f-551f1aff5eaf)
 
 ### Academic Achievements:
